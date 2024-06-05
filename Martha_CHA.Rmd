@@ -188,6 +188,10 @@ mean(vendors_mean$Total_Hap_to_Owner, na.rm=TRUE)
 
 #calculate table for subsidy per firm and compare to average
 
+git add . 
+git commit -m "added new files" 
+git push origin main
+
 
 ```
 
