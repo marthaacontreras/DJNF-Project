@@ -1,0 +1,68 @@
+---
+title: "scraping_data_from_pdfs with R"
+format: html
+editor: visual
+---
+
+# Scraping data from PDFs with R, Tabula
+
+One of these methods of liberating government data from a pdf should work. I typically experiment with each on a project.
+
+## Method 1: Using Adobe Acrobat
+
+1.  Open the pdf file prison_report_page_9.pdf in Adobe Acrobat Reader.
+2.  Follow along with Sean.
+3.  Read it into R.
+
+## Method 2: Using Tabula browser tool
+
+1.  Download Tabula from [Tabula.technology](https://tabula.technology/)
+2.  Follow along with Sean
+3.  Read it into R
+
+## Method 3: Using Tabula bindings for R.
+
+1.  Install the tabulapdf package in R, then load libraries we'll need, the tidyverse and janitor (for cleaning)
+
+```{r}
+install.packages("tabulapdf", repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"))
+install.packages('janitor')
+install.packages('tidyverse')
+
+library(tidyverse)
+library(janitor)
+library(tabulapdf)
+
+```
+
+2.  Use the extract tables function to read in the data from the pdf.
+
+```{r}
+page_9_table <- extract_tables("prison_report_page_9.pdf", pages=1)
+```
+
+3.  Pull the dataframe out of the nested list
+
+```{r}
+
+page_9_table <- page_9_table[[1]]
+
+
+```
+
+4.  Clean up the column names and remove the last three rows and convert text to numbers.
+
+```{r}
+
+page_9_table <- page_9_table %>%
+  clean_names() %>%
+  slice(1:11) %>%
+  mutate(across(everything(), parse_number))
+
+
+```
+
+## Method 4: Make AI do your work for you.
+
+1.  Upload to Claude https://claude.ai/chat/269db6c5-4aaf-4ddc-a9b0-edf1e2bb0b74
+2.  Copy out and save as CSV

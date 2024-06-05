@@ -1,0 +1,4 @@
+"0",""
+"0","combo <- rbind(CHA_2020_4, CHA_2021_1, CHA_2021_2, CHA_2021_3, CHA_2021_4, CHA_2022_1, CHA_2022_2, CHA_2022_3, CHA_2022_4)"
+"0",""
+"0","write.csv(combo,""combo.csv"")"

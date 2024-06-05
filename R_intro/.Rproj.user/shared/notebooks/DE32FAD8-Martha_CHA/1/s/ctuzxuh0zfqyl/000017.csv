@@ -1,0 +1,6 @@
+"0",""
+"0","leases_per_firm <- combo %>% "
+"0","  count(vendor_name) %>% "
+"0","  arrange(n)"
+"0"," "
+"0","write_csv(leases_per_firm, ""leaeses_per_firm.csv"")"
