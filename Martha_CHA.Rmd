@@ -109,11 +109,13 @@ summary(combo$vendor_name)
 
 combo %>% 
   count(vendor_name) %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  head() 
 
 leases_per_firm <- combo %>% 
   count(vendor_name) %>% 
-  arrange(n)
+  arrange(n) %>% 
+  head()
  
 write_csv(leases_per_firm, "leaeses_per_firm.csv")
 ```
