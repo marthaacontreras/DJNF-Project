@@ -117,7 +117,7 @@ leases_per_firm <- combo %>%
   arrange(n) %>% 
   head()
  
-write_csv(leases_per_firm, "leaeses_per_firm.csv")
+write_csv(leases_per_firm, "leases_per_firm.csv")
 ```
 
 ```{r}
