@@ -180,8 +180,8 @@ mean(vendors_mean$Total_Hap_to_Owner, na.rm=TRUE)
 #   mutate(pct_gross_rent=total_subsidy/gross_rent) 
 
 #^something went wrong here, but was previously working
-summary(combo$pct_gross_rent)
-arrange(desc(combo$Pct_Gross_Rent))
+#summary(combo$pct_gross_rent)
+#arrange(desc(combo$Pct_Gross_Rent))
 
 
 #calculate table for subsidy per firm and compare to average
