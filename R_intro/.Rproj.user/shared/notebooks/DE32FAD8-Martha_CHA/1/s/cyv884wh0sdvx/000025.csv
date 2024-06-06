@@ -1,9 +1,0 @@
-"0",""
-"0","#calculations, every capitalized label is the numeric value (was previously processed as characters and had to mutate) "
-"0","combo <- combo %>% "
-"0","  mutate(Utility_Allowance=as.numeric(utility_allowance)) %>% "
-"0","  mutate(total_subsidy=Hap_to_Owner+Utility_Allowance) %>% "
-"0","  mutate(pct_gross_rent=total_subsidy/gross_rent) "
-"2","Error in UseMethod(""mutate"") : 
-  no applicable method for 'mutate' applied to an object of class ""table""
-"

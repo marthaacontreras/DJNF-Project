@@ -1,8 +1,0 @@
-"0","# read in the html"
-"0","results <- sboe_url %>%"
-"0","  read_html() %>% "
-"0","  html_table()"
-"0",""
-"0","# display the html below"
-"0","results <- results[[1]]"
-"0",""
