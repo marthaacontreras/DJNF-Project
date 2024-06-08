@@ -2,52 +2,85 @@
 title: "Wednesday Second Draft Story Pitch Memo - Website edition"
 date: "2024-06-05"
 output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
-**Martha Contreras, marthacontreras2025@u.northwestern.edu, June 3, 2024** 
- 
-Chicago is one of the cities with the largest housing crisis in the United States. An estimated 68,000 Chicagoans are experiencing homelessness, according to NBC News (February, 2024). While the majority of people below the poverty line are being pushed out of the city, forced into unsanitary or unsafe living conditions, or onto the streets, a few receive housing vouchers from the federal government distributed by the city. Where is this government money going? To billion dollar corporations, the most financially benefited in Chicago having multiple class action lawsuits alleging thousands of Department of Buildings code violations and thousands of evictions. 
- 
-The Housing Choice Voucher (HCV) Program utilizes federal funds, provided by the U.S. Department of Housing and Urban Development (HUD), to help low-income families, the elderly and people with disabilities to pay for safe, decent and clean housing (apartments, duplexes, condominiums, single-family homes and townhouses). People who find housing through the program are called “participants.” As an HCV Program participant, you pay the property owner or manager a portion of your monthly rent (based on your income) and the Chicago Housing Authority (CHA) signs a Housing Assistant Payment (HAP) contract with the property owner promising to directly pay the rest. Participant families contribute 30-40% of their income toward rent and utilities.
+**Martha Contreras, [marthacontreras2025\@u.northwestern.edu](mailto:marthacontreras2025@u.northwestern.edu){.email}, June 3, 2024**
 
-The HAP contract between the CHA and property owners lasts 15-30 years … unless participants are evicted. 
+Chicago is one of the cities with the largest housing crisis in the United States.
+An estimated 68,000 Chicagans are experiencing homelessness, according to NBC News (February, 2024).
+While the majority of people below the poverty line are being pushed out of the city, forced into unsanitary or unsafe living conditions, or onto the streets, a few receive housing vouchers from the federal government distributed by the city.
+Where is this government money going?
+To billion dollar corporations, the most financially benefited in Chicago having multiple class action lawsuits alleging thousands of Department of Buildings code violations and thousands of evictions.
 
-According to the Reader, a highly esteemed Chicago non-profit newsroom, Pangea Real Estate Holdings LLC has filed more than 9,000 eviction cases since 2009 (2019). Mice infestations, radiators not working in the middle of winter (the average December night in Chicago lowers to 22 degrees) and unanswered calls maintenance calls, accumulating debt, hundreds of eviction cases, and yet investing over $20 million to purchase dozens of apartment buildings all within 46 blocks of a South Side neighborhood. Meanwhile, “the company has claimed credit for reviving south and west side communities.”
+The Housing Choice Voucher (HCV) Program utilizes federal funds, provided by the U.S.
+Department of Housing and Urban Development (HUD), to help low-income families, the elderly and people with disabilities to pay for safe, decent and clean housing (apartments, duplexes, condominiums, single-family homes and townhouses).
+People who find housing through the program are called “participants.” As an HCV Program participant, you pay the property owner or manager a portion of your monthly rent (based on your income) and the Chicago Housing Authority (CHA) signs a Housing Assistant Payment (HAP) contract with the property owner promising to directly pay the rest.
+Participant families contribute 30-40% of their income toward rent and utilities.
 
-From the fourth quarter of 2020 to the end of 2023, according to a spreadsheet of CHA information sent by the government as a FOIA request, there were a total of 364,728 HAP contracts among 16,222 property owners. Pangea Real Estate Holdings LLC was the property owner with the most HAP leases (6,485) and the highest total gross rent per owner ($7,029,293).  
+The HAP contract between the CHA and property owners lasts 15-30 years … unless participants are evicted.
 
+According to the Reader, a highly esteemed Chicago non-profit newsroom, Pangea Real Estate Holdings LLC has filed more than 9,000 eviction cases since 2009 (2019).
+Mice infestations, radiators not working in the middle of winter (the average December night in Chicago lowers to 22 degrees) and unanswered calls maintenance calls, accumulating debt, hundreds of eviction cases, and yet investing over \$20 million to purchase dozens of apartment buildings all within 46 blocks of a South Side neighborhood.
+Meanwhile, “the company has claimed credit for reviving south and west side communities.”
 
-Chart of the property owners ranked in descending order of amount of HAP leases.
+From the fourth quarter of 2020 to the end of 2023, according to a spreadsheet of CHA information sent by the government as a FOIA request, there were a total of 364,728 HAP contracts among 16,222 property owners.
+Pangea Real Estate Holdings LLC was the property owner with the most HAP leases (6,485) and the highest total gross rent per owner (\$7,029,293).
 
-For comparison, the total sum gross rent was roughly $501.8 million, the total average gross rent was roughly $31 thousand and the total median gross rent was roughly $12 thousand. Therefore, Pangea received 1.4% of the total money. To put that into perspective, roughly 22,723% more than the total average gross rent and roughly 58,450% more than the total median gross rent. Pangea also has nearly double the amount of total gross rent than Atlas Asset Management Corp, the second owner with the second highest amount of total gross rent (nearly $3.7 million). 
+```{r, results='asis'}
+cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18288566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
+```
 
-When calculating the total sum and average of HAP money sent to owners, I received highly skewed data. I then realized the “HAP to Owner” column in the 2021Q2 sheet from the excel sent by the government is illegible data. There are letters and multiple zeros before numbers with numeric values exceed far above the same address’ gross rent, which is impossible. 
+For comparison, the total sum gross rent was roughly \$501.8 million, the total average gross rent was roughly \$31 thousand and the total median gross rent was roughly \$12 thousand.
+Therefore, Pangea received 1.4% of the total money.
+To put that into perspective, roughly 22,723% more than the total average gross rent and roughly 58,450% more than the total median gross rent.
+Pangea also has nearly double the amount of total gross rent than Atlas Asset Management Corp, the second owner with the second highest amount of total gross rent (nearly \$3.7 million).
 
-After isolating the flawed data, excluding 2021Q2 from 2020Q4 to the end of 2023Q4, Pangea received roughly 1.31% of all money HAP sent to owners and roughly 21,234% more than the average owner. Here is a table of the 15 property owners with the highest total gross rent (all unskewed data):
+When calculating the total sum and average of HAP money sent to owners, I received highly skewed data.
+I then realized the “HAP to Owner” column in the 2021Q2 sheet from the excel sent by the government is illegible data.
+There are letters and multiple zeros before numbers with numeric values exceed far above the same address’ gross rent, which is impossible.
 
+After isolating the flawed data, excluding 2021Q2 from 2020Q4 to the end of 2023Q4, Pangea received roughly 1.31% of all money HAP sent to owners and roughly 21,234% more than the average owner.
+Here is a table of the 15 property owners with the highest total gross rent (all unskewed data):
 
-Given the lawsuits from Pangea to residents in impoverished Chicago neighborhoods, the corporation is disproportionately exploiting vulnerable people with inadequate housing, while receiving government housing assistance funds dedicated to helping the very families targeted.   
- 
-I am planning on further data scraping to find the neighborhoods of each address by zip code, to confirm that this private equity firm is predominantly leasing properties in lower income areas to HCV Program participants. I will also compare the prices of Pangea’s rent to other rent pricing in the area to measure the exploitation of government funds. 
+Given the lawsuits from Pangea to residents in impoverished Chicago neighborhoods, the corporation is disproportionately exploiting vulnerable people with inadequate housing, while receiving government housing assistance funds dedicated to helping the very families targeted.
 
-The Reader already conducted an extensive investigation on this company’s “apartment empire,” but there was no information on its HAP contracts. No information on the millions of dollars in government funding dedicated to uplifting Chicago’s vulnerable communities is directly funding this corporation and indirectly contributing to the housing crisis, in the four years following the publication of this article. In order to bring the data and story to life, I will interview different plaintiffs of lawsuits filed against Pangea who were participants of the HCV Program. I also need to speak to a federal housing department expert to contextualize the data of Chicago to other cities in the United States.  
+I am planning on further data scraping to find the neighborhoods of each address by zip code, to confirm that this private equity firm is predominantly leasing properties in lower income areas to HCV Program participants.
+I will also compare the prices of Pangea’s rent to other rent pricing in the area to measure the exploitation of government funds.
+
+The Reader already conducted an extensive investigation on this company’s “apartment empire,” but there was no information on its HAP contracts.
+No information on the millions of dollars in government funding dedicated to uplifting Chicago’s vulnerable communities is directly funding this corporation and indirectly contributing to the housing crisis, in the four years following the publication of this article.
+In order to bring the data and story to life, I will interview different plaintiffs of lawsuits filed against Pangea who were participants of the HCV Program.
+I also need to speak to a federal housing department expert to contextualize the data of Chicago to other cities in the United States.
+
+```{r, results='asis'}
+cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18294095"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
+```
+Goldman Investments is another New York based giant private equity fund that I will dig into.  
 
 The extensiveness of this article can vary based on expedition and usability of government data, but a minimum of two months would be needed (7 weeks of reporting—data gathering and interviewing; 3 weeks of writing and editing).
 
-*Data Visualization Plan*
-**Many of these tasks that are postponed until more data is gathered**
+# Data Visualization Plan
 
-Coding to find the longitudinal and latitudinal locations of each property addresses, and plotting them on a map of Chicago with Census Beaureo of poverty per area breakdown and setting these area groupings as the line boundaries on the visual map. 
-   
-    Create another specific map for Pangea (expecting properties to be in predominantly impoverished and southwest Chicago areas based on research).      
-    Expecting map to demosntrate Pangea's property dominance of most vulnerable communities. 
-     
-    Apart from poverty, will be examining census data to holsitically look at the communities where these properties sit and the people who live          there.
+*Many of these tasks are postponed until more data is gathered*
+
+Coding to find the longitudinal and latitudinal locations of each property addresses, and plotting them on a map of Chicago with Census Bureau of poverty per area breakdown and setting these area groupings as the line boundaries on the visual map.
+
+```         
+Create another specific map for Pangea (expecting properties to be in predominantly impoverished and southwest Chicago areas based on research).      
+Expecting map to demosntrate Pangea's property dominance of most vulnerable communities. 
+ 
+Apart from poverty, will be examining census data to holsitically look at the communities where these properties sit and the people who live there.
+```
 
 Comparing HAP leases to other lease prices in the same area (is there any exploitation of pricing happening?), and if so mapping it with bar charts for double visual locations (amount comparison and proximate geographical location)
 
-*Coding of data results, charts, and noticed faulted original data*
-**The original spreadsheet received from the government has entire sections with either evidently faulted or unclear data**  
+# Coding of data results, charts, and noticed faulted original data with explanation
+
+*The original spreadsheet received from the government has entire sections with either evidently faulted or unclear data*
+
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 library(rio)
@@ -125,6 +158,28 @@ write.csv(combo,"combo.csv")
 ```
 
 ```{r}
+combo <- combo %>% 
+  mutate(vendor_name=
+           case_when(
+             vendor_name == 'GOLDMAN INVESTMENTS N&S 1 78TH STREET LP' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T1 CHICAGO LLC' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T2 CHICAGO LLC' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T3 CHICAGO LLC' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T4 CHICAGO LP' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T5 CHICAGO LP' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS T8 CHICAGO EQUITY LP' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS WPD I - EGGLESTON LLC' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS WPD I - INDIANA LLC' ~ 'GOLDMAN INVESTMENTS',
+             vendor_name == 'GOLDMAN INVESTMENTS WPD I - WABASH LLC' ~ 'GOLDMAN INVESTMENTS',
+              
+             TRUE ~ vendor_name
+           )
+)
+
+```
+
+
+```{r}
 
 colnames(combo)
 
@@ -133,12 +188,11 @@ summary(combo$vendor_name)
 combo %>% 
   count(vendor_name) %>% 
   arrange(desc(n)) %>% 
-  head() 
+  head(10) 
 
 leases_per_firm <- combo %>% 
   count(vendor_name) %>% 
-  arrange(n) %>% 
-  head()
+  arrange(n) 
  
 write_csv(leases_per_firm, "leases_per_firm.csv")
 ```
@@ -164,11 +218,14 @@ vendors <- combo %>%
     ) %>%  
   arrange(desc(Total_Gross_Rent))
 
-#data excluding 2021Q2* from 2020Q4 to 2023Q4 (non skewed Hap to Owner data) 
 ```
 
+I then eliminated the flawed data (Hap to Owner column of 2021Q2) by removing the entire 2021Q2 sheet in order to not skew the rest of the calculations (couldn't just remove the column).
+So the data extracted from now on is from 2020Q4 until then end of 2021Q4 excluding 2021Q2.
+I also selected the utility allowance column.
 
 ```{r}
+#data excluding 2021Q2* from 2020Q4 to 2023Q4 (non skewed Hap to Owner data)
 vendors_mean <- combo %>% 
   select(vendor_name, gross_rent, Hap_to_Owner, quarter, utility_allowance) %>% 
   group_by(vendor_name) %>% 
@@ -198,7 +255,13 @@ mean(vendors_mean$Total_Hap_to_Owner, na.rm=TRUE)
 
 #NET MONEY PROPERTY OWNERS RECEIVE FROM THE GOVERNMENT = (UTILITY + HAP TO OWNER)
 
+summary(vendors_mean$Total_Hap_to_Owner)
+
 ```
+
+I then use the utility allowance to create a total subsidy column and a column of the percentage gross rent.
+
+Pct_gross_rent is the percentage gross rent of the total subsidy = (the amount of HAP money CHA sends to the property owner + utilities) / the gross rent
 
 ```{r}
 
@@ -209,114 +272,117 @@ mean(vendors_mean$Total_Hap_to_Owner, na.rm=TRUE)
    mutate(pct_gross_rent=total_subsidy/gross_rent) %>% 
    arrange(desc(combo$pct_gross_rent))
 
+
+
 summary(combo$pct_gross_rent)
 ```
+
+Hmmmmm a **minimum of 0** and a **maximum of infinity**, lets look at all the individual firms to see what is going on.
 
 ```{r}
 #calculate table for subsidy per firm
  combo_no_2021Q2 <- combo %>%
-   filter(!quarter=="2021Q2") %>% 
-   mutate(Utility_Allowance=as.numeric(utility_allowance)) %>%
-   mutate(total_subsidy=Hap_to_Owner+Utility_Allowance) %>%
-   mutate(pct_gross_rent=total_subsidy/gross_rent) %>% 
-   mutate(pct_gross_rent_sans_utility=Hap_to_Owner/gross_rent) %>% 
-   arrange(desc(pct_gross_rent))
+    filter(!quarter=="2021Q2") %>%  
+    group_by(vendor_name) %>%
+    summarize(Total_Subsidy=sum(total_subsidy,na.rm=TRUE))
+    
 #percent gross rent = total subsidy (HAP to Owner+Utilities)/gross rent 
 # percentage gross rent sans utility = (HAP to Owner)/gross rent
- 
-```
- 
-Pct_gross_rent is the percentage gross rent of the total subsidy = (the amount of HAP money CHA sends to the property owner + utilities) / the gross rent
- 
+#  
+#  mutate(Utility_Allowance=as.numeric(utility_allowance)) %>%
+#     mutate(total_subsidy=Hap_to_Owner+Utility_Allowance) %>%
+#     mutate(pct_gross_rent=total_subsidy/gross_rent) %>% 
+#     mutate(pct_gross_rent_sans_utility=Hap_to_Owner/gross_rent) %>% 
+#     arrange(desc(pct_gross_rent))
+# ```
+
+And let's look rank the highest amounts of percentage gross rents to see patterns.
+
 ```{r}
 #percent gross rent = total subsidy (HAP to Owner+Utilities)/gross rent
 combo_no_2021Q2 %>% 
   count(pct_gross_rent) %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  head(10)
   
 #62065/74666
 #[1] 0.8312351
+
+#824/74666
+#[1] 0.01103581
 ```
 
-83% of the property owners are receiving fully subsidized gross rent (including utilities).
+**83% of the property owners are receiving fully subsidized gross rent (including utilities).**
 
+\*\*And the second highest percentage of property owners (1.1%) resulted in a "NaN" percentage gross rent.
 
-The percentage gross rent (not including utililities) = (the amount of HAP money sent to the property owner) / the gross rent 
+Let's take a deeper look at what is going on in our original data to cause this by looking at the percentage gross rent (not including utility) to see what the HAP to Owner in comparison to gross rent breakdown is.
 
 ```{r}
 # percentage gross rent sans utility = (HAP to Owner)/gross rent 
 
 combo_no_2021Q2 %>% 
   count(pct_gross_rent_sans_utility) %>% 
-  arrange(desc(n))
-  
+  arrange(desc(n)) %>% 
+  head(10)
+
 ```
-There are 1,047 properties with 0 dollars of HAP to owner (which is why the percentage is 0 in the second row of the chart, not including the header), because HAP participants are only receiving utility. and many of those have 100% percentage gross rent because the utility (I checked on the spreadsheet) is the same amount as the gross rent. Therefore, they are only paying for utilities for their rent? 
 
-Furthermore, many that received 0% because no amount of money is sent from the CHA to the owner as HAP also had a 0 for the gross rent. 
+**The graph revealed an additional piece of information.** There are 1,047 properties with 0 dollars of HAP to owner (which is why the percentage is 0 in the second row of the chart, not including the header), because HAP participants are only receiving utility.
+And many of those have 100% percentage gross rent because the utility (I checked on the spreadsheet) is the same amount as the gross rent.
 
-The same amount of NaN persist (824)
- 
-Only 824 property owners have NaN. Nan can represent missing data.  
+Therefore, they are only paying for utilities for their rent?
 
+Furthermore, many that received 0% because no amount of money is sent from the CHA to the owner as HAP also had a 0 for the gross rent.
 
-*Next Steps  
+The same amount of NaN persist (824).
 
-I am firstly also awaiting for the full adrreses requested in the FOIA request that was sent to me. Apart from the incomplete and useless adresses, flawed data from the entire HAV to owners column from 2021Q2 and the thousands of ; I was able to work with the majority of the data and take intial story directions.
+824 property owners have percentage gross rent (with and without utilities) that result in "NaN".
 
-**WHAT IS NORMAL?? BIG QUESTIONS:
-Why do 1,047 have 0 HAP to owner money, and are only paying utilities? can this be possible?
-I need to ask the federal Department of Housing to contextualize the 83% of property owners receiving fully subsidized gross rent, including between other cities. Is Chicago an outlier, or is this data typical? 
+When looking at the combo_no_2021Q2 chart, I realized that the 824 properties with "NaN" results all have 0s in the HAP to Owner, Gross Rent and Utility Allowance columns.
+Inputted by the CHA onto the Excel.
 
+As a result, their total subsidies all equal 0, and both percentage gross rent data columns (with and without utilities), have "NaN" as their resulted values.
 
-My initial R code attempts to figure out what NaN signifies:
-```{r}
-#adventures of trying to figure out what NaN values mean
+# Next Steps
 
-# Sample data frame with NaN values
-df <- data.frame(a = c(1, 2, NaN, 4), b = c(4, NaN, 6, 8))
+I am firstly also awaiting for the full addresses requested in the FOIA request that was sent to me.
+Apart from the incomplete and useless addresses, flawed data from the entire HAV to owners column from 2021Q2 and the thousands of ; I was able to work with the majority of the data and take intitial story directions.
 
-# Function to check for NaN values in a data frame
-has_nan <- function(df) {
-  sapply(df, function(x) any(is.nan(x)))
-}
+**WHAT IS NORMAL?? BIG QUESTIONS:**
 
-# Check for NaN values in the data frame
-nan_check <- has_nan(df)
-print(nan_check)  # Returns TRUE for columns that contain NaN values
-
-# Find locations of NaN values in the data frame
-nan_locations <- sapply(df, function(x) which(is.nan(x)))
-print(nan_locations)
-
-# Summarize NaN values in each column
-nan_summary <- sapply(df, function(x) sum(is.nan(x)))
-print(nan_summary)
-```
-When looking at the combo_no_2021Q2 chart, I realized that the 824 properties with NaN all have zeroes for the lines/leases/HAP contracts/properties in the CHA system, which show 0s (no data) for the amount of HAP money paid to owner, utlility allowance and total subsidy. Because there is no data to work with, both percentage gross rent data columns (with and without utililities), have "NaN" as their resulted values.
+Why do 1,047 property owners receive no "HAP to Owner" money, and only utility allowance money?
+Can this be possible?
+I need to ask the Federal Department of Housing to contextualize the 83% of property owners receiving fully subsidized gross rent, including between other cities.
+Is Chicago an outlier, or is this data typical?
 
 ```{r}
 
 
-``` 
-*Extra*  
+```
 
-**Initial data questions brainstormed**
-Initial data gathering questions I would like to answer:
-Which private equity firms have the most amount of HCV leases? Least?
-What is the overall average gross rent? Sum? Per year? 
-What is the average gross rent of each firm? Sum? Per year?
-What is the overall average HAP to Owner? Sum? Per year?
-# What is the average HAP to each owner (firm)? Sum? Per year?
-Net_lease = Gross_Rent - HAP_to_Owner   
-What is the overall average of the net lease?Sum?Per year?
-What is average gross of the net lease of each firm? Sum? Per year?
+# Extra
+
+**Further data extraction:**
+
+Separate all metrics per years, to find trends over time and specifically be able to compare activity of individual property owners between specific year.
 
 **Non-data questions to further investigate:**
-On the Housing Assistance Payments (HAP Contract), it says that "During the
-initial lease term, the owner may not raise the rent to owner."
-    What is considered the initial lease term --> when can owners start raising the rent?
-    Based on the time period, COMPARE IN DATA (ie if span is 1 year then search for trends in rent changes using the same addresses) 
-    --> unless the data set is only comprised of leases that begin, find this as well  
-I believe my story lies in these answers, so my idea is to answer these questions and narrow into a specific topic concerning private equity firms and HAP leases as my results reveal the story. Essentially, see if any data revails private equity firms exploiting the housing market and the HAP program  
 
+On the Housing Assistance Payments (HAP Contract), it says that "During the initial lease term, the owner may not raise the rent to owner." What is considered the initial lease term
+
+-   When can owners start raising the rent?
+    Based on the time period, COMPARE IN DATA (i.e. if span is 1 year then search for trends in rent changes using the same addresses) --\> unless the data set is only comprised of leases that begin, find this as well
+
+-   The other 10 top property owners —\> are there more trends of exploitation?
+
+-   Follow the money.
+    Where do these initial government funds go?
+    What is the expenditure breakdown of these top 10 companies?
+    What are their investment portfolios?
+
+I believe various stories lie in these answers.
+
+```{r, results='asis'}
+cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18288566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
+```
