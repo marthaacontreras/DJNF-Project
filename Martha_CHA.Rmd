@@ -58,7 +58,8 @@ I also need to speak to a federal housing department expert to contextualize the
 ```{r, results='asis'}
 cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18294095"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
 ```
-Goldman Investments is another New York based giant private equity fund that I will dig into.  
+
+Goldman Investments is another New York based giant private equity fund that I will dig into.
 
 The extensiveness of this article can vary based on expedition and usability of government data, but a minimum of two months would be needed (7 weeks of reporting—data gathering and interviewing; 3 weeks of writing and editing).
 
@@ -178,7 +179,6 @@ combo <- combo %>%
 
 ```
 
-
 ```{r}
 
 colnames(combo)
@@ -283,26 +283,28 @@ Hmmmmm a **minimum of 0** and a **maximum of infinity**, lets look at all the in
 #calculate table for subsidy per firm
  combo_no_2021Q2 <- combo %>%
     filter(!quarter=="2021Q2") %>%  
-    group_by(vendor_name) %>%
-    summarize(Total_Subsidy=sum(total_subsidy,na.rm=TRUE))
-    
+    mutate(Utility_Allowance=as.numeric(utility_allowance)) %>%
+    mutate(total_subsidy=Hap_to_Owner+Utility_Allowance) %>%
+    mutate(pct_gross_rent=total_subsidy/gross_rent) %>%
+    mutate(pct_gross_rent_sans_utility=Hap_to_Owner/gross_rent) %>%
+    arrange(desc(pct_gross_rent))
+
+# group_by(vendor_name) %>%
+#     summarize(Total_Subsidy=sum(total_subsidy,na.rm=TRUE))
+#     
 #percent gross rent = total subsidy (HAP to Owner+Utilities)/gross rent 
 # percentage gross rent sans utility = (HAP to Owner)/gross rent
 #  
-#  mutate(Utility_Allowance=as.numeric(utility_allowance)) %>%
-#     mutate(total_subsidy=Hap_to_Owner+Utility_Allowance) %>%
-#     mutate(pct_gross_rent=total_subsidy/gross_rent) %>% 
-#     mutate(pct_gross_rent_sans_utility=Hap_to_Owner/gross_rent) %>% 
-#     arrange(desc(pct_gross_rent))
-# ```
+ 
+```
 
 And let's look rank the highest amounts of percentage gross rents to see patterns.
 
 ```{r}
 #percent gross rent = total subsidy (HAP to Owner+Utilities)/gross rent
-combo_no_2021Q2 %>% 
-  count(pct_gross_rent) %>% 
-  arrange(desc(n)) %>% 
+combo_no_2021Q2 %>%
+  count(pct_gross_rent) %>%
+  arrange(desc(n)) %>%
   head(10)
   
 #62065/74666
