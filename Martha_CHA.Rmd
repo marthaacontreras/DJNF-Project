@@ -1,5 +1,5 @@
 ---
-title: "Wednesday Second Draft Story Pitch Memo - Website edition"
+title: "Federal Housing Assistance Funds distribution breakdown in Chicago"
 date: "2024-06-05"
 output: html_document
 editor_options: 
@@ -7,7 +7,7 @@ editor_options:
     wrap: sentence
 ---
 
-**Martha Contreras, [marthacontreras2025\@u.northwestern.edu](mailto:marthacontreras2025@u.northwestern.edu){.email}, June 3, 2024**
+**Primary Story**
 
 Chicago is one of the cities with the largest housing crisis in the United States.
 An estimated 68,000 Chicagans are experiencing homelessness, according to NBC News (February, 2024).
