@@ -27,7 +27,7 @@ Mice infestations, radiators not working in the middle of winter (the average De
 Meanwhile, “the company has claimed credit for reviving south and west side communities.”
 
 From the fourth quarter of 2020 to the end of 2023, according to a spreadsheet of CHA information sent by the government as a FOIA request, there were a total of 364,728 HAP contracts among 16,222 property owners.
-Pangea Real Estate Holdings LLC was the property owner with the most HAP leases (6,485) and the highest total gross rent per owner (\$7,029,293).
+Pangea Real Estate Holdings LLC was the property owner with the most HAP leases (6,485) and the highest total gross rent per owner ($7,029,293).
 
 ```{r, results='asis'}
 cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18288566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
