@@ -9,7 +9,7 @@ output:
       collapsed: true
 ---
 
-#Primary Story
+# Primary Story
 
 Chicago is one of the cities with the largest housing crisis in the United States.
 An estimated 68,000 Chicagans are experiencing homelessness, according to NBC News (February, 2024).
