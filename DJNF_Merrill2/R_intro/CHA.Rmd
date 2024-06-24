@@ -1,0 +1,19 @@
+---
+title: "Sunday paragraph"
+output: html_document
+date: "2024-06-02"
+---
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(rio)
+library(janitor)
+```
+
+```{r}
+CHA_2020_1 <- rio::import("https://github.com/wellsdata/DJNF_Merrill/raw/main/data/CHA_Data_24_053R.xlsx", sheet = "2020Q4") %>% 
+  mutate(quarter="2020Q4")
+
+```

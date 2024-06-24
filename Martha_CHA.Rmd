@@ -9,7 +9,7 @@ output:
       collapsed: true
 ---
 
-**Primary Story**
+#Primary Story
 
 Chicago is one of the cities with the largest housing crisis in the United States.
 An estimated 68,000 Chicagans are experiencing homelessness, according to NBC News (February, 2024).
@@ -386,7 +386,3 @@ On the Housing Assistance Payments (HAP Contract), it says that "During the init
     What are their investment portfolios?
 
 I believe various stories lie in these answers.
-
-```{r, results='asis'}
-cat('<div class="flourish-embed flourish-chart" data-src="visualisation/18288566"><script src="https://public.flourish.studio/resources/embed.js"></script></div>')
-```
